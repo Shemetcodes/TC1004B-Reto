@@ -2,9 +2,15 @@
 <html>
     <head>
         <title>Mi aplicacion</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     </head>
 
     <body>
+        <div id="navbar">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+        </div>
         <h1>Sensor 1</h1>
         <div>
             <canvas id="myGauge" width="1000" height="300"></canvas>
@@ -19,4 +25,5 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="js/gauge.js"></script>
     <script src="js/chart.js"></script>
+    <script src="js/stickynavbar.js"></script>
 </html>
