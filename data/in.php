@@ -2,7 +2,7 @@
     // For database connections
     include_once 'database.php';
 
-    // http://tc1004b-reto.gearhostpreview.com//data/in.php?var1=95.23&var2=13.4
+    // http://tc1004b-reto.gearhostpreview.com/data/in.php?var1=95.23&var2=13.4
 
     // Verifying data
     echo " [GET] var1: " . $_GET['var1'] . " var2: " . $_GET['var2'] . "<br/>";
