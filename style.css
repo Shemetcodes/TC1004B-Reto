@@ -1,8 +1,11 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 /* Style the navbar */
 #navbar {
     overflow: hidden;
     background-color: #333;
-    text-align: center;
   }
   
   /* Navbar links */
@@ -15,6 +18,16 @@
     text-decoration: none;
   }
   
+  #navbar a:hover {
+    background-color: #cdcdcd;
+    color:  #296d98;
+  }
+  
+  #navbar a.active {
+    background-color: #296d98;
+    color: white;
+  }
+
   /* Page content */
   .content {
     padding: 16px;
