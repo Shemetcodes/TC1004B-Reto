@@ -45,14 +45,14 @@ body {
     padding-top: 60px;
   }
 
-/* Punto 1 */
-/* Style the navbar */
+/* 
+
 #navbar1 {
   overflow: hidden;
   background-color: #333;
 }
 
-/* Navbar - Punto 1 links */
+
 #navbar1 a {
   float: left;
   display: block;
@@ -72,14 +72,13 @@ body {
   color: white;
 }
 
-/* Punto 2 */
-/* Style the navbar */
+
 #navbar2 {
     overflow: hidden;
     background-color: #333;
 }
 
-/* Navbar - Punto 2 links */
+
 #navbar2 a {
   float: left;
   display: block;
@@ -99,14 +98,13 @@ body {
   color: white;
 }
 
-/* Punto 3 */
-/* Style the navbar */
+
 #navbar3 {
   overflow: hidden;
   background-color: #333;
 }
 
-/* Navbar - Punto 3 links */
+
 #navbar3 a {
   float: left;
   display: block;
@@ -125,3 +123,4 @@ body {
   background-color: #FEC5E5;
   color: white;
 }
+*/
