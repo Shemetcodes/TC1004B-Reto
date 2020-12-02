@@ -1,9 +1,9 @@
 <?php
     // Database credentials
-    $servername = "den1.mysql6.gear.host";
-    $username   = "dbreto";
-    $password   = "Me431VR~key-";
-    $dbname     = "dbreto";
+    $servername = "den1.mysql3.gear.host";
+    $username   = "tc1004bretov2";
+    $password   = "	Yx2082~6B_TL";
+    $dbname     = "tc1004bretov2";
     $tbname     = "sensor";
 
     // Create database connection
