@@ -15,7 +15,7 @@
     if(isset($var3) || isset($var4)){
         // MySQL injection query
         $sql = "INSERT INTO sensor (sensor3Value, sensor4Value)
-        VALUES ('$var3','$var4)";
+        VALUES ('$var3','$var4')";
         
         // Insert into database
         if (mysqli_query($conn, $sql)) {
