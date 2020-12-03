@@ -17,7 +17,7 @@ var opts = {
   limitMin: false,     // If true, the min value of the gauge will be fixed
   colorStart: '#6FADCF',   // Colors
   colorStop: '#89609e',    // just experiment with them
-  strokeColor: '#E0E0E0',  // to see which ones work best for you
+  strokeColor: '#89609e',  // to see which ones work best for you
   generateGradient: true,
   highDpiSupport: true,     // High resolution support
   percentColors: [[0.0, "#a9d70b" ], [200, "#f9c802"], [400, "#ff0000"]]   // Make color react according to the position of the needle
