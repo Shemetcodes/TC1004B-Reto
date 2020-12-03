@@ -8,7 +8,7 @@ var myChart = new Chart(ctx, {
             label: 'Distance [mm]',
             data: [],       // Data is empty Adding it later, allows to see a pretty animation!
             fill: false,
-            borderColor: '#89609e',     
+            borderColor: '#74B72E',     
             borderWidth: 1,
             lineTension: 0
         }]
