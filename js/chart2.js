@@ -9,7 +9,7 @@ var chart = new Chart(ctx, {
         datasets: [{
             label: 'Cambios de Temperatura',
             backgroundColor: 'rgba(0, 0, 0, 0.1)',
-            borderColor: '#6FADCF',
+            borderColor: '#74B72E',
             data: [24, 25, 28, 30, 33, 30, 28]
         }]
     },
