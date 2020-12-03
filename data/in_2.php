@@ -8,8 +8,8 @@
     echo " [GET] var3: " . $_GET['var3'] . " [GET] var4: " . $_GET['var4'] . "<br/>";
 
     // Parsing data
-    $var1 = $_GET['var3'];
-    $var2 = $_GET['var4'];
+    $var3 = $_GET['var3'];
+    $var4 = $_GET['var4'];
 
     // Only insert, if variables are not empty
     if(isset($var3) || isset($var4)){
