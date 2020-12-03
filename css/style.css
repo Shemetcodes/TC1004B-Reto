@@ -2,126 +2,161 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/* Style the navbar */
-#navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Navbar Main links */
-  #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-  
-  #navbar a:hover {
-    background-color: #cdcdcd;
-    color:  #296d98;
-  }
-  
-  #navbar a.active {
-    background-color: #296d98;
-    color: white;
-  }
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
 
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 23%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: rgb(204, 204, 204);
+  color: #296d98;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #296d98;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
     width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
   }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
+}
 
 /* Punto 1 */
-/* Style the navbar */
-#navbar1 {
-  overflow: hidden;
-  background-color: #333;
+/* Style the navigation menu */
+.navbar1 {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
 }
 
-/* Navbar - Punto 1 links */
-#navbar1 a {
+/* Navigation links */
+.navbar1 a {
   float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-#navbar1 a:hover {
-  background-color: #cdcdcd;
-  color:  #89609e;
-}
-
-#navbar1 a.active1 {
-  background-color: #89609e;
+  padding: 12px;
   color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 23%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar1 a:hover {
+  background-color: rgb(204, 204, 204);
+  color: #89609e;
+}
+
+/* Style the current/active link */
+.navbar1 a.active1 {
+  background-color: #89609e;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar1 a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
 }
 
 /* Punto 2 */
-/* Style the navbar */
-#navbar2 {
-    overflow: hidden;
-    background-color: #333;
+/* Style the navigation menu */
+.navbar2 {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
 }
 
-/* Navbar - Punto 2 links */
-#navbar2 a {
+/* Navigation links */
+.navbar2 a {
   float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-#navbar2 a:hover {
-  background-color: #cdcdcd;
-  color:  #74B72E;
-}
-
-#navbar2 a.active2 {
-  background-color: #74B72E;
+  padding: 12px;
   color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 23%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar2 a:hover {
+  background-color: rgb(204, 204, 204);
+  color: #74B72E;
+}
+
+/* Style the current/active link */
+.navbar2 a.active2 {
+  background-color: #74B72E;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar2 a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
 }
 
 /* Punto 3 */
-/* Style the navbar */
-#navbar3 {
-  overflow: hidden;
-  background-color: #333;
+/* Style the navigation menu */
+.navbar3 {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
 }
 
-/* Navbar - Punto 3 links */
-#navbar3 a {
+/* Navigation links */
+.navbar3 a {
   float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-#navbar3 a:hover {
-  background-color: #9b9b9b;
-  color:  #FEC5E5;
-}
-
-#navbar3 a.active3 {
-  background-color: #FEC5E5;
+  padding: 12px;
   color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 23%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar3 a:hover {
+  background-color: rgb(160, 160, 160);
+  color: #FEC5E5;
+}
+
+/* Style the current/active link */
+.navbar3 a.active3 {
+  background-color: #FEC5E5;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar3 a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
 }

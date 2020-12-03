@@ -1,0 +1,127 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar Main links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    background-color: #cdcdcd;
+    color:  #296d98;
+  }
+  
+  #navbar a.active {
+    background-color: #296d98;
+    color: white;
+  }
+
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+/* Punto 1 */
+/* Style the navbar */
+#navbar1 {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar - Punto 1 links */
+#navbar1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#navbar1 a:hover {
+  background-color: #cdcdcd;
+  color:  #89609e;
+}
+
+#navbar1 a.active1 {
+  background-color: #89609e;
+  color: white;
+}
+
+/* Punto 2 */
+/* Style the navbar */
+#navbar2 {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navbar - Punto 2 links */
+#navbar2 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#navbar2 a:hover {
+  background-color: #cdcdcd;
+  color:  #74B72E;
+}
+
+#navbar2 a.active2 {
+  background-color: #74B72E;
+  color: white;
+}
+
+/* Punto 3 */
+/* Style the navbar */
+#navbar3 {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar - Punto 3 links */
+#navbar3 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#navbar3 a:hover {
+  background-color: #9b9b9b;
+  color:  #FEC5E5;
+}
+
+#navbar3 a.active3 {
+  background-color: #FEC5E5;
+  color: white;
+}

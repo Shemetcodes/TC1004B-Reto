@@ -1,4 +1,3 @@
-
 // Create Chart with no data
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
