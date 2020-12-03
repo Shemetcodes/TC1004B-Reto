@@ -1,27 +1,36 @@
+
+// Create Chart with no data
 var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
+var myChart = new Chart(ctx, {
     type: 'line',
-    
-    // The data for our dataset
     data: {
-        labels: [],
+        labels: [],         // Labels are empty
         datasets: [{
-            label: 'Cambios de Temperatura',
-            backgroundColor: 'rgba(0, 0, 0, 0.1)',
-            borderColor: '#89609e',
-            data: []
+            label: 'Distance [mm]',
+            data: [],       // Data is empty Adding it later, allows to see a pretty animation!
+            fill: false,
+            borderColor: '89609e',     
+            borderWidth: 1,
+            lineTension: 0
         }]
     },
-
-    // Configuration options go here
-    options: {}
+    options: {
+        responsive: true,
+        hoverMode: 'index',
+        stacked: false,
+        title: {
+            display: true,
+            text: 'Distancia'
+        },
+        scales: {
+        }
+    }
 });
 
 // Function to add new data to a chart
 function addData(chart, label, data) 
 {
-    chart.data.label.push(label);
+    chart.data.labels.push(label);
     chart.data.datasets.forEach((dataset) => 
     {
         dataset.data.push(data);
@@ -73,7 +82,7 @@ $.ajax(
                 This technique is for demonstration purposes. A better way, should be 
                 add another field at the database and update it when data was added to chart.
                 */
-                if(myChart.data.labels[myChart.data.label.length - 1] === sensorTime)
+                if(myChart.data.labels[myChart.data.labels.length - 1] === sensorTime)
                 {
                     // Do nothing
                     console.log('No new data');

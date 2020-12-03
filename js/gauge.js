@@ -31,3 +31,4 @@ gauge.maxValue = 500; // set max gauge value
 gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 gauge.animationSpeed = 57; // set animation speed (32 is default value)
 
+
