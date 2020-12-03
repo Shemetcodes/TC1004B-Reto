@@ -1,6 +1,6 @@
 <?php
     // For database connections
-    include_once 'database.php';
+    include_once 'database_max.php';
 
     // tc1004b-reto.gearhostpreview.com/data/in.php?var1=95.23&var2=13.4
 

@@ -4,7 +4,7 @@
     $username   = "dbreto";
     $password   = "Me431VR~key-";
     $dbname     = "dbreto";
-    $tbname     = "sensor";
+    $tbname     = "sensor_max";
 
     // Create database connection
     $conn=mysqli_connect($servername,$username,$password,"$dbname");

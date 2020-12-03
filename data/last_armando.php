@@ -1,6 +1,6 @@
 <?php
     // For database connections
-    include_once 'database.php';
+    include_once 'database_armando.php';
 
     // MySQL select all data
     $sql = "SELECT * FROM $dbname.$tbname ORDER BY ID DESC LIMIT 1";
