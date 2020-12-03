@@ -1,5 +1,5 @@
 // Create Chart with no data
-var ctx = document.getElementById('myChart2').getContext('2d');
+var ctx = document.getElementById('myChart3').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
