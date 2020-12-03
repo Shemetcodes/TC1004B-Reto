@@ -39,7 +39,7 @@ function addData(chart, label, data)
 
 // Plot all the data at the database
 $.ajax(
-    '../data/all.php',
+    '../data/all_ale.php',
     {
         success: function(data) {
             var jsonData = JSON.parse(data);
@@ -67,7 +67,7 @@ $.ajax(
   // Every 0.5s check for new data
   function fetchLastData(){
     $.ajax(
-        '../data/last.php',
+        '../data/last_ale.php',
         {
             success: function(data) {
                 var jsonData = JSON.parse(data);

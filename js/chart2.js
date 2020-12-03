@@ -39,23 +39,23 @@ function addData(chart, label, data)
 
 // Plot all the data at the database
 $.ajax(
-    '../data/all.php',
+    '../data/all_max.php',
     {
         success: function(data) {
             var jsonData = JSON.parse(data);
-            var sensor3Data ;    // equivalent to sensor1Value
-            var sensor4Data ;    // equivalent to sensor2Value
+            var sensor1Data ;    // equivalent to sensor1Value
+            var sensor2Data ;    // equivalent to sensor2Value
             var sensorTime ;    // converts timestamp to time (used as label)
             for(row in jsonData){
                 // Extract sensor1Data
-                sensor3Data = jsonData[row]['sensor3Value'];
-                sensor4Data = jsonData[row]['sensor4Value'];
+                sensor1Data = jsonData[row]['sensor1Value'];
+                sensor2Data = jsonData[row]['sensor2Value'];
                 // Extract time from timestamp
                 sensorTime = new Date(jsonData[row]['timestamp']).toLocaleTimeString();
                 // Add data to chart
                 addData(myChart, sensorTime, sensor1Data);
             }
-            gauge.set(sensor4Data); // set value of the gauge to the last value of sensor2Value
+            gauge.set(sensor2Data); // set value of the gauge to the last value of sensor2Value
         },
         error: function() {
           console.log('There was some error performing the AJAX call!');
@@ -67,12 +67,12 @@ $.ajax(
   // Every 0.5s check for new data
   function fetchLastData(){
     $.ajax(
-        '../data/last.php',
+        '../data/last_max.php',
         {
             success: function(data) {
                 var jsonData = JSON.parse(data);
-                var sensor3Data = jsonData[0]['sensor3Value']; 
-                var sensor4Data = jsonData[0]['sensor4Value']; 
+                var sensor1Data = jsonData[0]['sensor1Value']; 
+                var sensor2Data = jsonData[0]['sensor2Value']; 
                 var sensorTime = new Date(jsonData[0]['timestamp']).toLocaleTimeString();   
                 /* 
                 Use the last time the sensor was updated, and compare that time with
@@ -90,7 +90,7 @@ $.ajax(
                 {
                     // Add new record to chart
                     addData(myChart, sensorTime, sensor1Data);
-                    gauge.set(sensor5Data); // set actual value
+                    gauge.set(sensor2Data); // set actual value
                 }
     
             },
